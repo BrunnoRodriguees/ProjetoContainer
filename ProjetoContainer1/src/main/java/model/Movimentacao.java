@@ -2,18 +2,16 @@ package model;
 
 import java.sql.Date;
 
-import javax.xml.crypto.Data;
-
 public class Movimentacao {
 	
-	private String tipo;
+	private String tipoMovimentacao;
 	private Date dataInicio;
-	private Data dataFim;
-	public String getTipo() {
-		return tipo;
+	private Date dataFim;
+	public String getTipoMovimentacao() {
+		return tipoMovimentacao;
 	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
+	public void setTipoMovimentacao(String tipoMovimentacao) {
+		this.tipoMovimentacao = tipoMovimentacao;
 	}
 	public Date getDataInicio() {
 		return dataInicio;
@@ -21,12 +19,13 @@ public class Movimentacao {
 	public void setDataInicio(Date dataInicio) {
 		this.dataInicio = dataInicio;
 	}
-	public Data getDataFim() {
+	public Date getDataFim() {
 		return dataFim;
 	}
-	public void setDataFim(Data dataFim) {
+	public void setDataFim(Date dataFim) {
 		this.dataFim = dataFim;
 	}
 	
-
+	
 }
+	

@@ -11,7 +11,7 @@ public class Main {
 		
 		Movimentacao movimentacao = new Movimentacao();
 		MovimentacaoDao movimentacaoDao = new MovimentacaoDao();
-		movimentacao.getTipo();
+		movimentacao.getTipoMovimentacao();
 		movimentacao.getDataInicio();
 		movimentacao.getDataFim();
 		

@@ -15,7 +15,7 @@ public class ContainerDao {
 	private ResultSet rs = null;
 	private Connection c;
 	public boolean insertContainer(Container container) {
-		sql = "INSERT INTO Container (cliente, numContainer, tipo, statusContainer,categoria)(?, ?, ?, ?, ?)";
+		sql = "INSERT INTO Container (cliente, numContainer, tipo, statusContainer,categoria) VALUES(?, ?, ?, ?, ?)";
 	try {
 		Conexao conexao = new Conexao();
 		c = conexao.conectaBD();
@@ -42,5 +42,8 @@ public class ContainerDao {
 	}
 public ResultSet getRs() {
 	return rs;
+}
+public void setRs(ResultSet rs) {
+	this.rs = rs;
 }
 }

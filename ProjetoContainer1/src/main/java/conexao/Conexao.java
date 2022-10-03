@@ -11,7 +11,7 @@ public class Conexao {
 		Connection conn = null;
 		
 		try {
-			String url = "jdbc:mysql://localholt:3306/Container2?user=root&password=password";
+			String url = "jdbc:mysql://localhost:3306/Container2?user=root&password=password";
 			conn = DriverManager.getConnection(url);
 			
 		}catch (Exception erro) {
